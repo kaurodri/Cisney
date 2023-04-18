@@ -10,9 +10,9 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log('a user connected');
+    console.log('Um usuário foi conectado');
     socket.on('disconnect', () => {
-        console.log('user disconnected');
+        console.log('Usuário Desconectado');
     });
 });
 
@@ -23,5 +23,5 @@ io.on('connection', (socket) => {
   });
 
 server.listen(3000, () => {
-    console.log('listening on *:3000');
+    console.log('Porta :3000');
 });
